@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +15,10 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- fevicon -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  
+
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <!-- style css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive-->
@@ -35,7 +37,7 @@
 <body class="main-layout">
   <!-- loader  -->
   <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="{static 'images/loading.gif' }" alt="#" /></div>
   </div>
   <!-- end loader -->
   <!-- header -->
@@ -49,7 +51,7 @@
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
                   </div>
                 </div>
               </div>
@@ -66,7 +68,7 @@
                       <li> <a href="#testimonial">Testomonial</a> </li>
                       <li> <a href="#contact">Contact Us</a> </li>
                      
-                     <li> <a href="#"><img src="icon/icon_b.png" alt="#" /></a></li>
+                     <li> <a href="#"><img src="{% static 'icon/icon_b.png' %}" alt="#" /></a></li>
                      </ul>
                    </nav>
                  </div>
@@ -106,7 +108,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -121,8 +123,8 @@
                 <div class="row">
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="text-bg">
-                      <span>Welcome To Shree</span>
-                      <h1>Vegetables Shop</h1>
+                      <span>Welcome To Sree</span>
+                      <h1>Vegetables Shop of Sreejith</h1>
                       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal </p>
                       <form class="Vegetable">
                 <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
@@ -134,7 +136,7 @@
 
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -163,7 +165,7 @@
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="images_box">
-                      <figure><img src="images/img2.png"></figure>
+                      <figure><img src="{% static 'images/img2.png' %}"></figure>
                     </div>
                   </div>
                 </div>
@@ -202,7 +204,7 @@
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
         <div class="about-box_img">
-          <figure><img src="images/about.jpg" alt="#" /></figure>
+          <figure><img src="{% static 'images/about.jpg' %}" alt="#" /></figure>
         </div>
       </div>
     </div>
@@ -219,26 +221,26 @@
     <div class="row">
       <div class="col-md-12">
         <div  class="titlepage">
-          <h2> Fresh <strong class="llow">vegetable</strong> </h2>
+          <h2>  <strong class="llow">vegetable shop </strong> </h2>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
         <div class="vegetable_shop">
-          <h3>Best Vegetables Shop</h3>
+          <h3>created by Sreejith</h3>
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages andIt is a long established fact that a reader will be distracted </p>
         </div>
       </div>
        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
         <div class="vegetable_img">
-         <figure><img src="images/v1.jpg" alt="#"/></figure>
+         <figure><img src="{% static 'images/v1.jpg' %}" alt="#"/></figure>
          <span>01</span>
         </div>
       </div>
        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 ">
         <div class="vegetable_img margin_top">
-         <figure><img src="images/v2.jpg" alt="#"/></figure>
+         <figure><img src="{% static 'images/v2.jpg' %}" alt="#"/></figure>
          <span>02</span>
         </div>
       </div>
@@ -477,15 +479,15 @@
           </footer>
           <!-- end footer -->
           <!-- Javascript files-->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/jquery-3.0.0.min.js"></script>
-          <script src="js/plugin.js"></script>
+          <script src="{% static 'js/jquery.min.js' %}"></script>
+          <script src="{% static 'js/popper.min.js' %}"></script>
+          <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+          <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+          <script src="{% static 'js/plugin.js' %}"></script>
           <!-- sidebar -->
-          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="js/custom.js"></script>
-          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+          <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+          <script src="{% static 'js/custom.js' %}"></script>
+          <script src="{% static 'https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js' %}"></script>
 
 
           <script>
